@@ -63,7 +63,7 @@ btn.addEventListener('click',()=>{
             device:device1
 
         }
-   fetch('https://affilatebackend.tk/api/v1/login_affilate', {
+   fetch('http://localhost:9000/api/v1/login_affilate', {
             method: 'POST',
             body: JSON.stringify(obj),
             headers: { 'Content-Type': 'application/json' }

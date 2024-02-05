@@ -34,7 +34,7 @@ btn.addEventListener('click',()=>{
                password:password.value
            }
 
-           fetch('https://affilatebackend.tk/api/v1/forget_password',{
+           fetch('http://localhost:9000/api/v1/forget_password',{
                method:"POST",
                body: JSON.stringify(obj),
                headers: { 'Content-Type': 'application/json' }

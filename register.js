@@ -73,7 +73,7 @@ btn.addEventListener('click',()=>{
                 }
         
               if(btn.innerHTML == "Get-Otp"){  
-                fetch('https://affilatebackend.tk/api/v1/register',{
+                fetch('http://localhost:9000/api/v1/register',{
                     method:"POST",
                     body: JSON.stringify(obj),
                     headers: { 'Content-Type': 'application/json' }
@@ -131,7 +131,7 @@ btn.addEventListener('click',()=>{
                 }
 
 
-                fetch('https://affilatebackend.tk/api/v1/verify',{
+                fetch('http://localhost:9000/api/v1/verify',{
                     method:"POST",
                     body: JSON.stringify(obj),
                     headers: { 'Content-Type': 'application/json' }
@@ -189,3 +189,6 @@ btn.addEventListener('click',()=>{
         console.log(err)
     }
 })
+
+
+       
